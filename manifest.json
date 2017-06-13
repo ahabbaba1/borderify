@@ -1,0 +1,20 @@
+{
+  "author":  "habbabababa",
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "1.0",
+
+  "description": "Adds a red border to all pages that contain String login in URL.",
+
+  "icons": {
+    "40": "icons/smile.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [ "*://*/login.*", "*://*/login.*/", "*://login.*.*/*", "*://login.*.*/", "*://login.*.*", "*://*/login/*/", "*://*/login" ],
+      "js": ["borderify.js"]
+    }
+  ]
+
+}
